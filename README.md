@@ -1,1 +1,0 @@
-# TeamShinkansen.github.io
