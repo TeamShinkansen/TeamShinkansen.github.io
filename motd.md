@@ -8,8 +8,8 @@
 
 ---
 
-- `UnauthorizedAccessException` or `IOException The media is write protected` on USB key export. We suggest running the app `as administrator`, in order to clean things up, then run it again normally to add your games. This should solve this issue.
-- If you want your autoplay or pixelart folders in your custom added games to work, you have to disable `Settings > Use linked sync` for the time being.
+- `UnauthorizedAccessException` or `IOException The media is write protected` on USB key export. This error is caused by having run the app as Administrator previously, hence requiring higher permissions to access the files afterwards. You can use this utility [Reset files permissions](http://lallouslab.net/2013/08/26/resetting-ntfs-files-permission-in-windows-graphical-utility/) to repair your files.
+- If you want your **autoplay** or **pixelart** folders in your custom added games to work, you have to disable `Settings > Use linked sync` for the time being.
 - If you **really** cannot make network mode work (this is the default mode when installing hakchi scripts from a clean slate), you can install the legacy component *clovershell*, which is available in user_mods, through the `Modules > Install extra modules` menu item. You may have to use the hidden `Settings > Developer tools > Force clovershell memboots` option as well.
 
 ---
