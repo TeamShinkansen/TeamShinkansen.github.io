@@ -1,23 +1,22 @@
-<!--- 2018-05-03T10:15:00.0000000-05:00 -->
+<!--- 2018-05-17T10:00:00.0000000-05:00 -->
 
-## Monday, May 3rd
+## Thursday, May 17th
 
 ---
 
 Thank you everyone who's been upgrading to this latest version!
 
-### Known Issues with v1.2.4
+### Known Issues with v1.2.5
 
 ---
 
-#### Newly added:
-
-- When uninstalling hakchi from a NES/SNES Mini that has not been installed from scratch with v1.2.x, there is a bug preventing restore using a kernel image file at the moment. It has been fixed in source and will make its way into the next release. In the meantime, you can use v1.1.0 to restore to stock/uninstall with an existing kernel image file.
-
 #### Recently fixed:
 
-- **Failure to update** hakchi scripts on your NES/SNES Mini or **Write error** appearing after clicking `yes` on the update prompt, or by using `Kernel > Install/repair` menu option.
-- **C8 error** when installing games with non-standard codename. Use standard NES/SNES Mini convention for directory and .desktop file names: `CLV-A-BCDEF`
+- `MD5 checksum failed` on `Install/Repair` trying to flash custom kernel.
+- Settings being reset when installing hmods.
+- Inability to restore original kernel from file.
+- Failure to update hakchi scripts using `Install/Repair`
+- **C8 error** when installing games with non-standard codename.
 
 #### Ongoing:
 
@@ -35,6 +34,12 @@ Thank you everyone who's been upgrading to this latest version!
 ---
 
 ### Trending Questions
+
+---
+
+**Q:** After rebooting, I get a dialog saying my NES/SNES Mini is taking a long time to reboot and it never comes back online.
+
+**A:** There are many possible reasons for this, but a common issue is with the drivers not installing correctly. You can either try manually installing the driver located in `hakchi2_CE/driver` names `nesmini_driver.exe`, or if this does not work, you can also try an open-source utility called `Zadig`. You can download it at this address: [Zadig - USB driver installation made easy] (https://zadig.akeo.ie/).
 
 ---
 
