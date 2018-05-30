@@ -1,14 +1,18 @@
-<!--- 2018-05-17T10:00:00.0000000-05:00 -->
+<!--- 2018-05-30T14:00:00.0000000-05:00 -->
 
-## Thursday, May 17th
+## Tuesday, May 30th
 
 ---
 
-Thank you everyone who's been upgrading to this latest version!
+We're updating you guys to signify a workaround for a recent minor issue with this latest release. Otherwise, hope you are having a better time with hakchi2 CE!
 
 ### Known Issues with v1.2.5
 
 ---
+
+#### Newly added:
+
+- Issue when multibooting to NES from SNES doesn't work. There is a workaround, see this reddit post: https://www.reddit.com/r/miniSNESmods/comments/8m532c/anyone_else_having_multiboot_issues_on_hakchi_ce/dzlvri5/
 
 #### Recently fixed:
 
@@ -27,7 +31,7 @@ Thank you everyone who's been upgrading to this latest version!
 
 ---
 
-**We are always working on improving hakchi2 CE**
+**Have a nice day!**
 
 *Team Shinkansen*
 
