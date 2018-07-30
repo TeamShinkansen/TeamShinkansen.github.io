@@ -1,33 +1,20 @@
-<!--- 2018-05-30T14:00:00.0000000-05:00 -->
+<!--- 2018-07-30T14:30:00.0000000-05:00 -->
 
-## Tuesday, May 30th
-
----
-
-We're updating you guys to signify a workaround for a recent minor issue with this latest release. Otherwise, hope you are having a better time with hakchi2 CE!
-
-### Known Issues with v1.2.5
+## Monday, July 30th
 
 ---
 
-#### Newly added:
+We are happy to announce the new release of hakchi2 CE. We are bumping the official version numbers from v1.2.5 to **v3.3.0** to reflect internal version number that has always been intended to be v3.x, and also to clear up a good deal of confusion that seemed to happen lately regarding which version is the most up-to-date.
 
-- Issue when multibooting to NES from SNES doesn't work. There is a workaround, see this reddit post: https://www.reddit.com/r/miniSNESmods/comments/8m532c/anyone_else_having_multiboot_issues_on_hakchi_ce/dzlvri5/
+Automatic update to follow soon!
 
-#### Recently fixed:
+---
 
-- `MD5 checksum failed` on `Install/Repair` trying to flash custom kernel.
-- Settings being reset when installing hmods.
-- Inability to restore original kernel from file.
-- Failure to update hakchi scripts using `Install/Repair`
-- **C8 error** when installing games with non-standard codename.
+### Noteworthy information regarding new release v3.3.0
 
-#### Ongoing:
+If you've been upgrading from older versions of hakchi, it is very possible that your NES/SNES mini is still running the `Clovershell` protocol. If that is so, this new version of hakchi2 CE will not allow using `emulated FTP` or `Synchronization` as long as you are using it.
 
-- Newly added games into one games collection will not be automatically selected in other collections sharing the same files, i.e. `snes-usa`, `snes-eur` and `snes-jpn`
-- `UnauthorizedAccessException` or `IOException The media is write protected` on USB key export. This error is caused by having run the app as Administrator previously, hence requiring higher permissions to access the files afterwards. You can use this utility [Reset files permissions](http://lallouslab.net/2013/08/26/resetting-ntfs-files-permission-in-windows-graphical-utility/) to repair your files.
-- If you want your **autoplay** or **pixelart** folders in your custom added games to work, you have to disable `Settings > Use linked sync` for the time being.
-- If you **really** cannot make network mode work (this is the default mode when installing hakchi scripts from a clean slate), you can install the legacy component *clovershell*, which is available in user_mods, through the `Modules > Install extra modules` menu item. You may have to use the hidden `Settings > Developer tools > Force clovershell memboots` option as well, and if you do, you have to press `CTRL-F12` to make this menu visible. Use these options with caution.
+In order to use the new SSH connection protocol, you only need to first make sure your `kernel is up-to-date` and then you can go into `Modules -> Uninstall extra modules`, uncheck `clovershell` and then click `OK` at the bottom. If the uninstall goes well, when your NES/SNES mini reboots, it should be connected using the new network protocols.
 
 ---
 
@@ -42,25 +29,31 @@ We're updating you guys to signify a workaround for a recent minor issue with th
 ---
 
 **Q:** After rebooting, I get a dialog saying my NES/SNES Mini is taking a long time to reboot and it never comes back online.
+**A:** There are many possible reasons for this, but here are a few common causes:
 
-**A:** There are many possible reasons for this, but a common issue is with the drivers not installing correctly. You can either try manually installing the driver located in `hakchi2_CE/driver` names `nesmini_driver.exe`, or if this does not work, you can also try an open-source utility called `Zadig`. You can download it at this address: [Zadig - USB driver installation made easy] (https://zadig.akeo.ie/).
-
----
-
-**Q:** My NES/SNES Mini is in `Recovery mode`, I can't do anything, what is that?
-
-**A:** This mode is when your console does not boot completely, or if you've attempted a kernel operation that might have failed. It will also happen if you select `Kernel > Advanced -> Boot recovery kernel from RAM` of course. To get out of this mode, if you don't know how to use the shell, is to click `Tools > Reboot` or, if this does not work, turn off the NES/SNES Mini power switch, and unplug its USB power cable manually.
+- Drivers may not be installing correctly. You can either try manually installing the driver located in `hakchi2_CE/driver` named `Nintendo_Classic_USB_Driver.exe`, or if this does not work, you can also try an open-source utility called `Zadig`. You can download it at this address: https://zadig.akeo.ie/ .
+- Sometimes, Windows' Firewall may be blocking the connection. Make sure to `Accept` incoming/outgoing connections when running hakchi2 CE. Windows should advise you of which program is requesting access. Only accept for hakchi2 CE. You can also, for debugging purposes, try to disable it and see if it works. Do not leave your system without a firewall afterwards though, this is there for a reason.
+- A device may be confusing hakchi2 CE or your NES/SNES mini on the network, like a games console on your network, or other devices. If possible, you can try disabling your ethernet or wifi connection to see if it helps, as a temporary measure, of course.
 
 ---
 
 **Q:** Where is the dump kernel menu option?
+**A:** It's gone! If you have a kernel dump in hand, you should still keep it safe, as uninstalling will require using it. However, if you're ever installing hakchi again on a NES/SNES mini which has its factory kernel installed, the backup is automatically done by the install script and saved somewhere safe, directly in the console's NAND memory.
 
-**A:** While the new releases of hakchi do NOT require any manual dump of your original kernel, we have still decided to re-add the option in  `Kernel > Advanced > Dump original kernel (legacy)`. You can use this for backwards compatibility with other hakchi2 releases.
+---
+
+**Q:** Where is `SFROM Tool` located in hakchi2 CE? I've heard it supports it, but can't find how to use it!
+**A:** You first need to visit DarkAkuma's website: http://darkakuma.z-net.us/p/sfromtool.html . And download his tool there. Also download the patches you want to apply. Then decompress the archive in the `sfrom_tool/` folder under your hakchi2 CE's personal directory (there is already a placeholder there for this use). Decompress the patches you want to use inside the `patches/` folder. And finally, in hakchi2 CE, enable `Settings > SFROM Tool` and profit! From then on, when importing SNES games, they will be converted by this tool. You can also find additional options in the games list's context menu `SFROM Tool`. Finally, there is helper code to allow dragging & dropping the install package and .cnp files onto hakchi2 CE. You can try this as well!
 
 ---
 
-**Q:** Where is the `Folders Manager` menu item that was present in the `Tools` menu before?
-
-**A:** For consistency, it's been moved to `Structure > Custom - Use folders manager` button-menu. Select this option and click on it again to access the folders manager.
+**Q:** Help! My custom games are not in the list anymore!
+**A:** Make sure the menu option `Settings -> Separate games storage` is checked if you are using `/games` and `/games_snes` folders to store your NES and SNES games separately. When this option is unchecked, only games in `/games` are considered.
 
 ---
+
+**Q:** Help! My original games are not shown in the list anymore!
+**A:** A new feature is accessible through `Settings -> Always copy original games`. This will only allow using original games that have been previously cached by hakchi2 CE upon connecting the desired console. Unchecking it will show all original games, regardless of their availability. hakchi2 CE will continue to rely on those original games to be present on your NES/SNES mini when syncing games to it.
+
+---
+
