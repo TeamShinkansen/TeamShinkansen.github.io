@@ -2,11 +2,19 @@
 
 ## Monday, July 30th
 
+As many of you probably have noticed, we haven't enabled the auto-updater for v3.3.0 yet. The very reason why we did that is to iron out new bugs that might pop out with a new release, which is what has inevitably happened! The one main issue to look out for is the `Uboot` flashing issues.
+
+We are working on fixing those issues! Hang tight!
+
 ---
 
-We are happy to announce the new release of hakchi2 CE. We are bumping the official version numbers from v1.2.5 to **v3.3.0** to reflect internal version number that has always been intended to be v3.x, and also to clear up a good deal of confusion that seemed to happen lately regarding which version is the most up-to-date.
+### Known issues with v3.3.0
 
-Automatic update to follow soon!
+- `Kernel -> Flash Uboot` is currently having issues when verifying MD5 checksum. We've received reports of people both having success even if there was an error message, and others who've had issues afterwards, so it's better to hold on before using this function for the time being, or stick with v1.2.5.
+- There is a typo in the `Shounen Jump` original games' command line, which may prevent them to work out-of-the-box when synced. The fix is to replace `/usr/bin/clover-kachikachi-wr` with `/bin/clover-kachikachi-wr`.
+- `Settings -> Enabled USB host` and `Settings -> Use extended font` have no effect anymore.
+- A cosmetic bug in the `Un/install modules` dialog prevents readmes from being parsed properly on some hmods.
+- Font remount module (which is installed by default with `Kernel -> Install/Repair`) has some potential issues with newer versions of the Famicom/NES mini. It also has some missing Japanese characters.
 
 ---
 
