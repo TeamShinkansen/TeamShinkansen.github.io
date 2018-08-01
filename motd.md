@@ -1,6 +1,6 @@
-<!--- 2018-07-30T14:30:00.0000000-05:00 -->
+<!--- 2018-08-01T15:17:00.0000000-05:00 -->
 
-## Monday, July 30th
+## Wednesday, August 1st
 
 As many of you probably have noticed, we haven't enabled the auto-updater for v3.3.0 yet. The very reason why we did that is to iron out new bugs that might pop out with a new release, which is what has inevitably happened! The one main issue to look out for is the `Uboot` flashing issues.
 
