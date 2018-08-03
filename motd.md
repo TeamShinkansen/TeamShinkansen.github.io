@@ -4,7 +4,7 @@
 
 A new release candidate version of hakchi2 CE has been released on GitHub. This one needs testing by hardened veterans of the scene! That's because, in the midst of fixing bugs, a major upgrade in hakchi core scripts was made and the app was updated accordingly. Fingers crossed many issues are fixed and not too many introduced!
 
-**Be advised:** You **WILL** need to use the `hold reset` method to update your kernel with this new release.
+**Be advised:** You MAY need to use the `hold reset` method to update your kernel with this new release.
 
 ---
 
