@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-    <version>3.4.0.0</version>
-    <url>https://github.com/TeamShinkansen/hakchi2/releases/download/v3.4.0/hakchi2_CE_3.4.0_Release.zip</url>
-    <changelog>https://teamshinkansen.github.io/xml/updates/v3.4.0-changelog.html</changelog>
+    <version>3.4.1.0</version>
+    <url>https://github.com/TeamShinkansen/hakchi2/releases/download/v3.4.1/hakchi2_CE_3.4.1_Release.zip</url>
+    <changelog>https://teamshinkansen.github.io/xml/updates/v3.4.1-changelog.html</changelog>
     <mandatory>true</mandatory>
 </item>
