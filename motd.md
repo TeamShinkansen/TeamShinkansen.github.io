@@ -1,8 +1,8 @@
-<!--- 2018-08-05T23:00:00.0000000-05:00 -->
+<!--- 2018-08-06T11:00:00.0000000-05:00 -->
 
-## Sunday, August 5th
+## Monday, August 6th
 
-Version 3.4.0 of hakchi2 CE is out now. We have worked as fast as possible to iron out the bugs found after the silent release of v3.3.0, plus we've had to improvise to adapt to the new mDNS connection method that should help a lot for wifi device discovery, and in the future.
+**Version 3.4.1 hotfix** is out today. It fixes unforetold issues with SD card users.
 
 **Be advised:** It's possible hakchi2 CE may not discover your NES/SNES mini when you first open up the new version. Give it more time than usual to make sure, at least 2 minutes, and if nothing happens, it's possible *you need to use the `hold reset` method* to update your kernel with this new release.
 
