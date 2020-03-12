@@ -3,7 +3,7 @@
 
 If you have any problems using hakchi2 ce, we recommend you join our discord server.
 
-[Rockin' The Classics](https://discord.gg/C9EDFyg)  
+[Rockin' The Classics](https://discord.gg/UUvqsAR)  
 
 We also have a subreddit.
 
