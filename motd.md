@@ -1,4 +1,6 @@
-<!--- 2020-05-26T11:56:00.0000000-05:00 -->
+<!--- 2022-11-09T12:59:00.0000000-05:00 -->
+[**Take our short two question survey**](https://forms.gle/PHjggWfvQXob6TbF7), we would greatly appreciate it!
+
 **Reminder:** If you're modding a sega mini, the included USB cable will not work.
 
 **Attention:** Hakchi2 CE 3.8 only works with RetroArch 1.8.4 Xtreme or later, you must also update the cores.
